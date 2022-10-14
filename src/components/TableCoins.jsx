@@ -15,14 +15,12 @@ const TableCoins = ({coins,search}) => {
     <table className="table table-dark mt-4 table-hover">
       <thead>
         <tr>
-            //mapeo titulos
           {tittles.map((coin , index) =>(
               <td key={index}> {coin} </td>
           ))}
         </tr>
       </thead>
       <tbody>
-        //mapeo monedas
         {filteredCoins.map((coin, index) => (
           <CoinRow coin={coin} key={index} index={index + 1} />
         ))}
